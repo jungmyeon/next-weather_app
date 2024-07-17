@@ -22,7 +22,7 @@ export default function Navbar( props : Props){
         if(value.length >= 3){
             try{
                 const res = await axios.get(
-                    `https://api.openweathermap.org/data/2.5/forecast?q=${place}&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}&cnt=56`
+                    `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}&cnt=56`
                 )
             }catch(error){
                 console.log(error);
